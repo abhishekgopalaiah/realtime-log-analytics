@@ -10,7 +10,7 @@ This project implements a real-time log analytics pipeline using PySpark, Spark 
 - **Scalable and Extensible**: Built to handle large volumes of log data and customizable for additional analytics or transformations.
 
 ### **Architecture**
-![Architecture Diagram](img\architecture.png)  
+![Architecture Diagram](img/architecture.png)  
 
 1. **Bronze Layer**: Ingests raw log data in JSON format.
 2. **Silver Layer**: Cleans and adds processing timestamps.
@@ -50,7 +50,7 @@ realtime-log-analytics/
 ### **Sample Output**
 After running the pipeline, you can query the Gold table for insights. Example:
 
-![Gold Diagram](img\gold_output.png)  
+![Gold Diagram](img/gold_output.png)  
 
 ```sql
 SELECT log_level, log_count FROM delta.`dbfs:/tmp/log_medallion/gold`
